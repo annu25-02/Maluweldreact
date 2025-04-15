@@ -1,0 +1,281 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            /* background-image: url(images/cont-back-img.jpeg); */
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+            /* min-height: 100vh; */
+            margin: 0;
+            background-attachment: fixed;
+        }
+
+        /* Header start */
+        nav {
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 70px;
+            background: #D71F29;
+            position: fixed;
+            top: 0;
+            z-index: 3;
+            padding: 0 20px;
+            animation: headerAnimation 3s;
+        }
+
+        @keyframes headerAnimation {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        #hea {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+            margin-right: 100px;
+        }
+
+        #hea li a {
+            color: white;
+            font-size: 17px;
+            font-weight: bolder;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        #hea li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: all 0.3s;
+        }
+
+        #hea li a:hover {
+            background: #fff;
+            color: #D81E28;
+            border-radius: 4px;
+
+        }
+
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            font-size: 24px;
+            color: white;
+        }
+
+        /* header end  */
+
+        /* footer start   */
+        footer {
+            background-color: #D71F29;
+            color: #ffffff;
+            padding: 40px 0 0;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            /* max-width: 1200px; */
+            margin: 0 auto;
+            padding: 0 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin: 10px 20px;
+            text-align: left;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .footer-logo img {
+            max-width: 150px;
+            margin-right: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .footer-logo img:hover {
+            transform: scale(1.05);
+        }
+
+        .footer-section h3 {
+            color: white;
+            margin-bottom: 15px;
+            font-size: 20px;
+            text-transform: uppercase;
+            width: 140px;
+            border-bottom: 2px solid white;
+            padding-bottom: 10px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .footer-section ul li::before {
+
+            font-family: 'Font Awesome 5 Free';
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: white;
+
+        }
+
+        .footer-section ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: #f0f0f0;
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            background-color: #0d0d0d;
+            color: #888;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        .company-info .malu {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .company-info .malu h3 {
+            border-bottom: none;
+            margin-bottom: 5px;
+            padding-bottom: 0;
+        }
+
+        .contact-details li {
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-details li i {
+            margin-right: 10px;
+            color: white;
+        }
+
+        /* footer  end */
+
+        /* About Section */
+        .about-us {
+            padding: 120px 20px;
+            text-align: center;
+        }
+
+        .about-container {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+            margin: 0 auto;
+            max-width: 800px;
+            border: 2px solid orangered;
+        }
+
+        .about-container h2 {
+            font-size: 2rem;
+            color: white;
+            line-height: 2rem;
+            margin-bottom: 20px;
+        }
+
+        h2:hover {
+            color: #B0171F;
+        }
+
+        .about-container p {
+            font-size: 1rem;
+            color: white;
+            margin: 10px 0;
+        }
+
+        /* Contact Section */
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .contact-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-image {
+            width: 100%;
+            max-width: 80px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .contact-card h3 {
+            font-size: 1.5rem;
+            color: orangered;
+            margin-bottom: 10px;
+        }
+
+        .contact-card p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+  
